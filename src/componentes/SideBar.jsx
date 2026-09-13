@@ -51,6 +51,7 @@ export default function SideBar({
             className={`flex flex-col min-h-screen border-r border-zinc-500 bg-zinc-800/98 text-zinc-300/80 shrink-0 
             fixed inset-y-0 left-0 z-40 w-55 transition-transform duration-300 md:relative md:translate-x-0
             ${sidebarAbierto ? "translate-x-0" : "-translate-x-full bg-transparent/50"}`}
+            style={{minHeight: '100dvh'}}
             onMouseDown={(e) => e.stopPropagation()}>
                 <div className="p-4 ">
                     <p className="text-[16px] font-medium">{nombre}'s space</p>

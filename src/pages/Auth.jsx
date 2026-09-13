@@ -62,7 +62,7 @@ export default function Auth(){
             <nav className="flex justify-between px-5 py-6 md:px-8">
             <span className="text-2xl tracking-wide">No<span className="text-zinc-500">to</span></span>
             
-             <div className="flex gap-15 items-center">
+             <div className="flex gap-2 md:gap-15 items-center">
                 <button className={`flex mr-2 py-1 px-4 border rounded-xl justufy-center items-center hover:cursor-pointer ${darkMode ? 'hover:bg-zinc-800': 'hover:bg-gray-200'}`}
                 onClick={() => setEstaRegistrado(!estaRegistrado)}>{estaRegistrado ? t("iniciar_sesion") : t("registrarse")}</button>
                 <button onClick={toggleDarkMode} className={`cursor-pointer border p-2 rounded-full transition duration-400 ${darkMode ? 'hover:bg-zinc-800': 'hover:bg-gray-200'}`}>{darkMode? <Sun size={25}/> : <Moon size={25}/>}</button>
